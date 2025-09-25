@@ -27,12 +27,10 @@
             $current_movie_id
         ]
     );
-
     //var_dump($statement);
 
     //1 movie ophalen
     $movie = $statement->fetchObject();
-
     //var_dump($movie);
 
     ?>

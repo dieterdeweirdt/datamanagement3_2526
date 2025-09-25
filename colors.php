@@ -1,5 +1,5 @@
 <?php
-    
+    //inladen van de data uit een extern bestand
     include_once 'includes/data.php';
 
     /* In development gebruiken we var_dump en print_r om te debuggen
@@ -25,14 +25,15 @@
     <h1>Colors</h1>
 
     <?php
+    //Loop door de array met kleuren
     for($i = 0; $i < count($colors) ; $i++ ){
-        /* 
+        /* //Manier 1: met een template string
         echo '<div 
                 style="background-color: ' . $colors[$i] . '">
                     Dit is de kleur ' . $colors[$i] . '
             </div>';
         */
-            
+        //Manier 2: met een apart bestand
         include 'views/color.php';
     }
     ?>
